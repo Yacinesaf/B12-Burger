@@ -1,0 +1,9 @@
+.titleFont {
+  font-family: 'Anton', sans-serif;
+  font-weight: 700;
+}
+
+.nav {
+  text-align: center;
+  display:  flex;
+}
