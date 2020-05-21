@@ -2,15 +2,16 @@ import React from 'react';
 import './styles.css'
 import logo from './logo.png'
 
-function Navbar(props) {
+function Navbar({ isEnglish }) {
   const lol = true
+  console.log(isEnglish)
   return (
     <div className='nav'>
       <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >HOME</h4>
+        <h4 className='navText' >{isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
       </div>
       <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >ABOUT US</h4>
+        <h4 className='navText' >{isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
       </div>
       <div>
         {lol ? <div style={{ paddingTop: 15 }}>
@@ -24,7 +25,7 @@ function Navbar(props) {
         <h4 className='navText' >BURGERS</h4>
       </div>
       <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >CONTACT</h4>
+        <h4 className='navText' >{isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
       </div>
     </div>
   );

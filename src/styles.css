@@ -26,9 +26,9 @@
   width: 0;
 }
 
-.navText:hover:after { 
-  width: 100%; 
-  left: 0; 
+.navText:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .nav {
@@ -39,9 +39,20 @@
   justify-content: center;
 }
 
+.backGradient {
+  background-image: url(./gradientBg.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: 1;
+}
+
 .landingPageBackground {
   background-image: url(./BgImage.png);
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  z-index: 2;
 }
