@@ -1,9 +1,47 @@
 .titleFont {
   font-family: 'Anton', sans-serif;
   font-weight: 700;
+  margin: 0;
+  color: #EA2027;
+  letter-spacing: 2px
+}
+
+.navText {
+  color: white;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+
+.navText:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -7px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navText:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .nav {
   text-align: center;
-  display:  flex;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+}
+
+.landingPageBackground {
+  background-image: url(./BgImage.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
 }
