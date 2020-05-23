@@ -56,3 +56,20 @@
   min-height: 100vh;
   z-index: 2;
 }
+
+.deliveryText {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.orderButton {
+  background-color: #EA2027;
+  color: white;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
