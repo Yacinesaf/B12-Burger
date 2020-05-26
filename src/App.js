@@ -10,6 +10,7 @@ import big from './assets/big.png'
 import tasty from './assets/tasty.png'
 import original from './assets/original.png'
 import Footer from './Footer';
+import './footer.css'
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <img src={original} alt='big' width={500} />
         </div>
       </div>
+      <div className='divider' />
       <div className='footer'>
         <Footer />
       </div>

@@ -8,8 +8,13 @@ p {
 }
 
 .footer_container {
-  padding: 80px 200px;
+  padding: 80px 100px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.divider {
+  background-color:  rgba(199, 199, 199, 0.349);
+  height: 0.5px;
+  opacity: 0.6;
 }
