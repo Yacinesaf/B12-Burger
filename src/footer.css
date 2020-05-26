@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+}
+
+.footer_container {
+  padding: 80px 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

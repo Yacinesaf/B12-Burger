@@ -4,7 +4,12 @@ import './styles.css'
 import en from './assets/en.png'
 import fr from './assets/fr.png'
 import LandingPageText from './LandingPageText';
-import kk from './assets/gradientBg.png'
+import burgerZoom from './assets/2ndPageImage.jpg'
+import video from './assets/video.mp4'
+import big from './assets/big.png'
+import tasty from './assets/tasty.png'
+import original from './assets/original.png'
+import Footer from './Footer';
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -19,7 +24,16 @@ function App() {
           <LandingPageText isEnglish={isEnglish} />
         </div>
       </div>
-      <div style={{backgroundImage : `url(${kk})`, backgroundSize : 'cover', backgroundPosition : 'center', height : '100vh', display : 'flex', justifyContent :'center'}}>
+      <div>
+        <div className='secondPageBg' style={{ position: 'relative' }} >
+          <video src={video} controls width={'50%'} style={{ position: "absolute", margin: 'auto', right: 0, left: 0, paddingTop: '10vh' }} />
+          <img src={big} alt='big' width={500} />
+          <img src={tasty} alt='big' width={500} />
+          <img src={original} alt='big' width={500} />
+        </div>
+      </div>
+      <div className='footer'>
+        <Footer />
       </div>
     </div>
   );
