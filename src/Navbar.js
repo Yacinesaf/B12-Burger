@@ -18,7 +18,7 @@ function Navbar({ isEnglish }) {
           <h1 className='titleFont' >B12</h1>
           <h1 className='titleFont' style={{ transform: ' translateY(-15px)' }} >BURGER</h1>
         </div>
-          : <img src={logo} alt='logo' height={150} width={150} style={{ padding: '0px 20px' }} />
+          : <img src={logo} alt='logo' height={150} width={150} style={{ margin: '0px 20px' }} />
         }
       </div>
       <div style={{ padding: '0px 40px' }}>
