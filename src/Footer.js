@@ -15,13 +15,13 @@ function Footer({ isEnglish, switchLanguage }) {
         <div className='col-1' />
         <div className='col-9' style={{ display: 'flex' }}>
           <div>
-            <h2>Our Links</h2>
+            <h3>Our Links</h3>
             <p>About us</p>
             <p>Contact</p>
             <p>Burgers</p>
           </div>
           <div style={{ paddingLeft: 250 }}>
-            <h2>Our info</h2>
+            <h3>Our info</h3>
             <p>1738 Boulevard Curé-Labelle, Laval, QC H7T 1L2</p>
             <p>(450)-688-0404</p>
             <div style={{ display: 'flex', alignItems: 'center' }}>

@@ -71,7 +71,7 @@
 .orderButton {
   background-color: #EA2027;
   color: white;
-  padding: 20px 30px;
+  padding: 15px 25px;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -81,6 +81,15 @@
 
 button:focus {
   outline: none;
+}
+
+video:focus {
+  outline: none;
+}
+
+video[poster] {
+  filter: brightness(80%);
+  object-fit: cover;
 }
 
 .secondPageBg {
@@ -100,4 +109,16 @@ button:focus {
 
 .divider {
   border-top: 0.5px solid #1d1b2e;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
