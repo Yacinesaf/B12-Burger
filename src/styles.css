@@ -11,6 +11,7 @@
   font-weight: 600;
   position: relative;
   cursor: pointer;
+  padding: 0px 40px;
 }
 
 .navText:after {
@@ -36,11 +37,38 @@
   display: flex;
   align-items: center;
   padding: 15px;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  margin: 0 auto;
   justify-content: center;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 20;
+}
+
+.navScrolledBgColor {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #090816;
+  padding: 15px;
+  height: 140px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.navScrolled {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transform: scale(0.8);
+  justify-content: center;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 20;
 }
 
 .backGradient {
@@ -111,14 +139,10 @@ video[poster] {
   border-top: 0.5px solid #1d1b2e;
 }
 
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
 
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}

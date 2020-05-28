@@ -1,34 +1,51 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './styles.css'
 import logo from './assets/logo.png'
 
-function Navbar({ isEnglish }) {
-  const lol = false
-  console.log(isEnglish)
-  return (
-    <div className='nav'>
-      <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >{isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
-      </div>
-      <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >{isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
-      </div>
-      <div>
-        {lol ? <div style={{ paddingTop: 15 }}>
-          <h1 className='titleFont' >B12</h1>
-          <h1 className='titleFont' style={{ transform: ' translateY(-15px)' }} >BURGER</h1>
+class Navbar extends Component {
+  constructor() {
+    super()
+    this.state = {
+      scrolled: false
+    }
+  }
+  componentDidMount() {
+    var h1 = parseInt(this.refs.header.offsetHeight);
+    window.addEventListener('scroll', this._calcScroll.bind(this, h1));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._calcScroll)
+  }
+
+  _calcScroll(h1) {
+    var _window = window;
+    var heightDiff = parseInt(h1);
+    var scrollPos = _window.scrollY;
+    if (scrollPos > heightDiff) {
+      this.setState({
+        scrolled: true,
+      });
+    } else {
+      this.setState({
+        scrolled: false,
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div className={this.state.scrolled ? 'navScrolledBgColor' : ''}>
+        <div ref='header' className={this.state.scrolled ? 'navScrolled' : 'nav'}>
+          <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
+          <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
+          <img src={logo} alt='logo' height={150} width={150} style={{ margin: '0px 20px' }} />
+          <h4 className='navText' >BURGERS</h4>
+          <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
         </div>
-          : <img src={logo} alt='logo' height={150} width={150} style={{ margin: '0px 20px' }} />
-        }
       </div>
-      <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >BURGERS</h4>
-      </div>
-      <div style={{ padding: '0px 40px' }}>
-        <h4 className='navText' >{isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Navbar;
