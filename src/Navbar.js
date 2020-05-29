@@ -18,11 +18,12 @@ class Navbar extends Component {
     window.removeEventListener('scroll', this._calcScroll)
   }
 
+
   _calcScroll(h1) {
     var _window = window;
     var heightDiff = parseInt(h1);
     var scrollPos = _window.scrollY;
-    if (scrollPos > heightDiff) {
+    if (scrollPos > heightDiff - 100) {
       this.setState({
         scrolled: true,
       });
@@ -35,8 +36,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className={this.state.scrolled ? 'navScrolledBgColor shadow p-3 mb-5' : ''}>
-        <div ref='header' className={this.state.scrolled ? 'navScrolled' : 'nav'}>
+      <div className={this.state.scrolled ? 'navScrolledBgColor shadow p-3' : ''}>
+        <div ref='header' className='nav'>
           <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
           <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
           <img src={logo} alt='logo' height={150} width={150} style={{ margin: '0px 20px' }} />

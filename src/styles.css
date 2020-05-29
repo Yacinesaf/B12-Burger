@@ -32,16 +32,13 @@
 }
 
 .nav {
-  text-align: center;
-  display: flex;
   align-items: center;
   padding: 15px;
   position: fixed;
   left: 0;
   right: 0;
   justify-content: center;
-  transition: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  z-index: 20;
+  transition: 0.3s ease-in-out;
 }
 
 .navScrolledBgColor {
@@ -49,25 +46,23 @@
   left: 0;
   right: 0;
   background-color: #EA2027;
-  padding: 15px;
   height: 100px;
   z-index: 20;
   display: flex;
   align-items: center;
-  transition: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.3s ease-in-out;
 }
-
+.navScrolledBgColor > .nav {
+  transform: scale(0.6);
+}
 .navScrolled {
-  text-align: center;
   display: flex;
   align-items: center;
   position: fixed;
   left: 0;
   right: 0;
-  transform: scale(0.6);
   justify-content: center;
-  transition: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  z-index: 20;
+  transition: 0.3s ease-in-out;
 }
 
 .backGradient {
