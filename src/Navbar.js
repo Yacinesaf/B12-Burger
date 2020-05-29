@@ -35,7 +35,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className={this.state.scrolled ? 'navScrolledBgColor' : ''}>
+      <div className={this.state.scrolled ? 'navScrolledBgColor shadow p-3 mb-5' : ''}>
         <div ref='header' className={this.state.scrolled ? 'navScrolled' : 'nav'}>
           <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
           <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
