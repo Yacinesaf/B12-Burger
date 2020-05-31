@@ -39,13 +39,19 @@ function LandingPage({ isEnglish }) {
         <div className='container-fluid p-0'>
           <div className='col-12 p-0'>
             <div className='container-fluid p-0'>
-              <div className='row justify-content-center'>
+              <div className='row'>
                 <video controlsList="nodownload" controls src={video} className='videoStyle m-0' poster={thumbnail} />
               </div>
               <div className='row justify-content-center' style={{ paddingTop: 100 }}>
-                {isEnglish ? <img src={big} alt='big' className='videoAdjectives' /> : <img src={bigfr} alt='big' className='videoAdjectives' />}
-                {isEnglish ? <img className='mx-5 videoAdjectives' src={tasty} alt='big' /> : <img className='mx-5 videoAdjectives' src={tastyfr} alt='big' />}
-                <img src={original} alt='big' className='videoAdjectives' />
+                <div className='col col-12 justify-content-center'>
+                  <img src={original} alt='original' className='videoAdjectives mx-auto' />
+                </div>
+                <div className='col col-12 justify-content-center'>
+                  {isEnglish ? <img className='mx-5 videoAdjectives' src={tasty} alt='tasty' /> : <img className='mx-5 videoAdjectives' src={tastyfr} alt='big' />}
+                </div>
+                <div className='col col-12 justify-content-center'>
+                  {isEnglish ? <img src={big} alt='big' className='videoAdjectives' /> : <img src={bigfr} alt='big' className='videoAdjectives' />}
+                </div>
               </div>
             </div>
           </div>
