@@ -1,11 +1,3 @@
-.titleFont {
-  font-family: 'Anton', sans-serif;
-  font-weight: 700;
-  margin: 0;
-  color: #EA2027;
-  letter-spacing: 2px
-}
-
 .navText {
   color: white;
   font-weight: 600;
@@ -17,6 +9,7 @@
 .navText:after {
   background: none repeat scroll 0 0 transparent;
   bottom: -7px;
+  content: "";
   display: block;
   height: 2px;
   left: 50%;
@@ -31,14 +24,19 @@
   left: 0;
 }
 
+.logo {
+  height: 100px;
+  width: 150px;
+  margin: 0px 20px;
+}
+
 .nav {
   align-items: center;
-  padding: 15px;
   position: fixed;
   left: 0;
   right: 0;
   justify-content: center;
-  transition: 0.3s ease-in-out;
+  transition-duration: 0.8s;
 }
 
 .navScrolledBgColor {
@@ -46,23 +44,27 @@
   left: 0;
   right: 0;
   background-color: #EA2027;
-  height: 100px;
   z-index: 20;
+  height: 100px;
   display: flex;
   align-items: center;
-  transition: 0.3s ease-in-out;
+  transition-duration: 0.8s;
 }
-.navScrolledBgColor > .nav {
-  transform: scale(0.6);
+
+.navScrolledBgColor>.nav {
+  transform: scale(0.8);
 }
-.navScrolled {
-  display: flex;
-  align-items: center;
+
+.navUnScrolledBgColor {
   position: fixed;
   left: 0;
   right: 0;
-  justify-content: center;
-  transition: 0.3s ease-in-out;
+  background-color: transparent;
+  z-index: 20;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.8s;
 }
 
 .backGradient {
@@ -84,7 +86,7 @@
   z-index: 2;
 }
 
-.deliveryText {
+.descriptionText {
   font-size: 30px;
   font-weight: 600;
   color: white;
@@ -133,6 +135,21 @@ video[poster] {
   border-top: 0.5px solid #1d1b2e;
 }
 
+.descriptionTextPadTop {
+  height: 300px;
+}
+
+.videoStyle {
+  margin: auto;
+  padding-top: 10vh;
+  cursor: pointer;
+  width: 50%;
+}
+
+.videoAdjectives {
+  width: 350px;
+}
+
 @media (max-width: 576px) {
   .orderButton {
     background-color: #EA2027;
@@ -148,6 +165,30 @@ video[poster] {
 
 @media (max-width: 768px) {}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .descriptionTextPadTop {
+    height: 300px;
+  }
+}
 
-@media (max-width: 1200px) {}
+@media (max-width: 1630px) {
+  .landingPageBackground {
+    background-image: url(./assets/BgImageTablet.png);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: 2;
+  }
+  .videoStyle {
+    padding-top: 10vh;
+    cursor: pointer;
+    width: 80%;
+  }
+  .videoAdjectives {
+    width: 70%;
+    padding: 15px 0px;
+  }
+}
+
+@media (min-width: 1200px) {}

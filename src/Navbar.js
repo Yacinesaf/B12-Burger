@@ -36,11 +36,11 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className={this.state.scrolled ? 'navScrolledBgColor shadow p-3' : ''}>
+      <div className={this.state.scrolled ? 'navScrolledBgColor' : 'navUnScrolledBgColor'}>
         <div ref='header' className='nav'>
           <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
           <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
-          <img src={logo} alt='logo' height={150} width={150} style={{ margin: '0px 20px' }} />
+          <img src={logo} alt='logo' className='logo' />
           <h4 className='navText' >BURGERS</h4>
           <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
         </div>
