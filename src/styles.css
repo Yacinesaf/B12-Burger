@@ -92,6 +92,12 @@
   color: white;
 }
 
+.slogan {
+  font-size: 40px;
+  color: white;
+  font-weight: 800;
+}
+
 .orderButton {
   background-color: #EA2027;
   color: white;
@@ -143,12 +149,14 @@ video[poster] {
   margin: auto;
   padding-top: 10vh;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
 }
 
 .videoAdjectives {
-  width: 350px;
+  /* width: 350px; */
+  width: 100%;
 }
+/* xs */
 
 @media (max-width: 576px) {
   .orderButton {
@@ -162,14 +170,18 @@ video[poster] {
     border-radius: 5px;
   }
 }
+/* sm */
 
 @media (max-width: 768px) {}
+
+/* md */
 
 @media (max-width: 992px) {
   .descriptionTextPadTop {
     height: 300px;
   }
 }
+/* lg */
 
 @media (max-width: 1630px) {
   .landingPageBackground {
@@ -180,15 +192,14 @@ video[poster] {
     min-height: 100vh;
     z-index: 2;
   }
-  .videoStyle {
-    padding-top: 10vh;
-    cursor: pointer;
-    width: 80%;
+  .descriptionText {
+    padding-top: 300px;
+    font-size: 45px;
   }
-  .videoAdjectives {
-    width: 70%;
-    padding: 15px 0px;
+  .slogan {
+    font-size: 60px;
   }
 }
+/* xl */
 
 @media (min-width: 1200px) {}

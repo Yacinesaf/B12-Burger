@@ -15,22 +15,16 @@ function LandingPage({ isEnglish }) {
       <div className='backGradient'>
         <div className='landingPageBackground'>
           <div className='container-fluid' >
-            <div className='d-xl-none descriptionTextPadTop' />
             <div style={{ minHeight: '100vh' }} className='row align-items-xl-center'>
               <div className='col-1' />
-              {isEnglish ?
-                <div className='col-lg-7 col-xl-5'>
-                  <p className='descriptionText'>Taste the greatness with our 100% natural ingredients and a fresh 200g beef seasoned and grilled.</p>
-                  <p style={{ color: 'white', fontSize: 35, fontWeight: 600 }} >THINK BIG. EAT BIG.</p>
-                  <button className='orderButton'>ORDER NOW</button>
-                </div>
-                :
-                <div className='col-4'>
-                  <p className='deliveryText'>Goûtez à la grandeur avec nos ingrédients 100% naturels et un bœuf frais 200G assaisonné et grillé.</p>
-                  <p style={{ color: 'white', fontSize: 32, fontWeight: 600 }} >PENSER GRAND. MANGER GRAND</p>
-                  <button className='orderButton'>COMMANDER</button>
-                </div>
-              }
+              <div className='col-lg-7 col-xl-5'>
+                <p className='descriptionText'>
+                  {isEnglish ? 'Taste the greatness with our 100% natural ingredients and a fresh 200g beef seasoned and grilled.'
+                    : 'Goûtez à la grandeur avec nos ingrédients 100% naturels et un bœuf frais 200G assaisonné et grillé.'}
+                </p>
+                <p className='slogan'>{isEnglish ? 'THINK BIG. EAT BIG.' : 'PENSER GRAND. MANGER GRAND.'}</p>
+                <button className='orderButton'>{isEnglish ? 'ORDER NOW' : 'COMMANDER'}</button>
+              </div>
             </div>
           </div>
         </div>
@@ -39,18 +33,20 @@ function LandingPage({ isEnglish }) {
         <div className='container-fluid p-0'>
           <div className='col-12 p-0'>
             <div className='container-fluid p-0'>
-              <div className='row'>
-                <video controlsList="nodownload" controls src={video} className='videoStyle m-0' poster={thumbnail} />
+              <div className='row mx-0 justify-content-center'>
+                <div className='col-11 col-sm-10 col-xl-6'>
+                  <video controlsList="nodownload" controls src={video} className='videoStyle m-0' poster={thumbnail} />
+                </div>
               </div>
-              <div className='row justify-content-center' style={{ paddingTop: 100 }}>
-                <div className='col col-12 justify-content-center'>
-                  <img src={original} alt='original' className='videoAdjectives mx-auto' />
+              <div className='row mx-0 justify-content-center' style={{ paddingTop: 100 }}>
+                <div className='col-10 col-sm-8 col-xl-3 py-3'>
+                  <img src={isEnglish ? tasty : tastyfr} alt='tasty' style={{ width: '100%' }} />
                 </div>
-                <div className='col col-12 justify-content-center'>
-                  {isEnglish ? <img className='mx-5 videoAdjectives' src={tasty} alt='tasty' /> : <img className='mx-5 videoAdjectives' src={tastyfr} alt='big' />}
+                <div className='col-10 col-sm-8 col-xl-3 py-3'>
+                  <img src={original} alt='original' style={{ width: '100%' }} />
                 </div>
-                <div className='col col-12 justify-content-center'>
-                  {isEnglish ? <img src={big} alt='big' className='videoAdjectives' /> : <img src={bigfr} alt='big' className='videoAdjectives' />}
+                <div className='col-10 col-sm-8 col-xl-3 py-3'>
+                  <img src={isEnglish ? big : bigfr} alt='big' style={{ width: '100%' }} />
                 </div>
               </div>
             </div>
