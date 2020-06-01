@@ -14,10 +14,10 @@ function App() {
     <div>
       <Navbar isEnglish={isEnglish} />
       <LandingPage isEnglish={isEnglish} />
-      <div className='divider' />
-      <div className='footer'>
+      { /* <div className='divider' /> */ }
+      {   /*   <div className='footer'>
         <Footer switchLanguage={switchLanguage} isEnglish={isEnglish} />
-      </div>
+  */}
     </div>
   );
 }

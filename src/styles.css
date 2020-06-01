@@ -1,3 +1,5 @@
+/* ------nav section------ */
+
 .navText {
   color: white;
   font-weight: 600;
@@ -24,12 +26,6 @@
   left: 0;
 }
 
-.logo {
-  height: 100px;
-  width: 150px;
-  margin: 0px 20px;
-}
-
 .nav {
   align-items: center;
   position: fixed;
@@ -37,6 +33,7 @@
   right: 0;
   justify-content: center;
   transition-duration: 0.8s;
+  padding: 40px;
 }
 
 .navScrolledBgColor {
@@ -53,6 +50,7 @@
 
 .navScrolledBgColor>.nav {
   transform: scale(0.8);
+  padding: 0px;
 }
 
 .navUnScrolledBgColor {
@@ -67,29 +65,35 @@
   transition-duration: 0.8s;
 }
 
-.backGradient {
-  background-image: url(./assets/gradientBg.png);
-  background-position: left;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
-  z-index: 1;
+/* -------mobile navabar------- */
+
+.navMobile {
+  position: fixed;
 }
+
+.menubtn {
+  float: right;
+}
+
+.logoMobile {
+  width: 100%;
+}
+
+/* -------first landing page------- */
 
 .landingPageBackground {
   background-image: url(./assets/BgImage.png);
   background-position: right;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  z-index: 2;
 }
 
-.descriptionText {
+.headline {
   font-size: 30px;
   font-weight: 600;
   color: white;
+  max-width: 700px;
 }
 
 .slogan {
@@ -113,14 +117,7 @@ button:focus {
   outline: none;
 }
 
-video:focus {
-  outline: none;
-}
-
-video[poster] {
-  filter: brightness(80%);
-  object-fit: cover;
-}
+/* -------second landing page------- */
 
 .secondPageBg {
   background-image: url(./assets/gradientBg.png);
@@ -129,20 +126,13 @@ video[poster] {
   min-height: 100vh;
 }
 
-.footer {
-  background-image: url(./assets/gradientBg.png);
-  background-size: cover;
-  min-height: 30vh;
-  width: 100%;
-  z-index: 1;
+video:focus {
+  outline: none;
 }
 
-.divider {
-  border-top: 0.5px solid #1d1b2e;
-}
-
-.descriptionTextPadTop {
-  height: 300px;
+video[poster] {
+  filter: brightness(80%);
+  object-fit: cover;
 }
 
 .videoStyle {
@@ -156,50 +146,127 @@ video[poster] {
   /* width: 350px; */
   width: 100%;
 }
+
+/* -------footer------- */
+
+.footer {
+  background-image: url(./assets/gradientBg.png);
+  background-size: cover;
+  min-height: 30vh;
+  width: 100%;
+  z-index: 1;
+}
+
+/* -------Other------- */
+
+.divider {
+  border-top: 0.5px solid #1d1b2e;
+}
+
+.descriptionTextPadTop {
+  height: 300px;
+}
+
+.logo {
+  height: 100px;
+  width: 150px;
+  margin: 0px 20px;
+}
+
+/* --------media queries-------- */
+
 /* xs */
 
-@media (max-width: 576px) {
+@media (max-width: 575.99px) {
+  .headline {
+    font-size: 20px;
+    padding-top: 20vh;
+  }
+  .landingPageBackground {
+    background-image: url(./assets/BgImageMobile.png);
+  }
+  .slogan {
+    font-size: 30px;
+  }
+  .orderButton {
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+}
+
+/* sm */
+
+@media (min-width: 576px) {
+  .headline {
+    font-size: 27px;
+    padding-top: 12vh;
+  }
+  .landingPageBackground {
+    background-image: url(./assets/BgImageMobile.png);
+  }
+}
+
+/* md */
+
+@media (min-width: 768px) {
+  .landingPageBackground {
+    background-image: url(./assets/BgImageMobile.png);
+  }
+  .headline {
+    padding-top: 18vh;
+    font-size: 45px;
+  }
+  .orderButton {
+    padding: 25px 35px;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+}
+
+/* lg */
+
+@media (min-width: 992px) {
+  .landingPageBackground {
+    background-image: url(./assets/BgImageTablet.png);
+  }
+  .slogan {
+    font-size: 60px;
+  }
+  .orderButton {
+    padding: 30px 40px;
+    font-size: 35px;
+    border-radius: 10px;
+  }
+  .headline {
+    padding-top: 25vh;
+    font-size: 45px;
+  }
+}
+
+/* xl */
+
+@media (min-width: 1200px) {
+  .headline {
+    font-size: 45px;
+    padding-top: 14vh;
+  }
+  .landingPageBackground {
+    background-image: url(./assets/BgImage.png);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
   .orderButton {
     background-color: #EA2027;
     color: white;
-    padding: 15px 15px;
-    font-size: 12px;
+    padding: 20px 40px;
+    font-size: 26px;
     font-weight: 600;
     cursor: pointer;
     border: none;
     border-radius: 5px;
   }
 }
-/* sm */
-
-@media (max-width: 768px) {}
-
-/* md */
-
-@media (max-width: 992px) {
-  .descriptionTextPadTop {
-    height: 300px;
-  }
-}
-/* lg */
-
-@media (max-width: 1630px) {
-  .landingPageBackground {
-    background-image: url(./assets/BgImageTablet.png);
-    background-position: right bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    z-index: 2;
-  }
-  .descriptionText {
-    padding-top: 300px;
-    font-size: 45px;
-  }
-  .slogan {
-    font-size: 60px;
-  }
-}
-/* xl */
-
-@media (min-width: 1200px) {}

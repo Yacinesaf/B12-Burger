@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './styles.css'
 import logo from './assets/logo.png'
+import './spinAnimationMenuIcon.css'
 
 class Navbar extends Component {
   constructor() {
     super()
     this.state = {
-      scrolled: false
+      scrolled: false,
+      menuIsClicked: false
     }
   }
   componentDidMount() {
@@ -36,13 +38,30 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className={this.state.scrolled ? 'navScrolledBgColor' : 'navUnScrolledBgColor'}>
-        <div ref='header' className='nav'>
-          <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
-          <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
-          <img src={logo} alt='logo' className='logo' />
-          <h4 className='navText' >BURGERS</h4>
-          <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
+      <div>
+        <div className={`d-lg-block d-none ${this.state.scrolled ? 'navScrolledBgColor ' : 'navUnScrolledBgColor '}`}>
+          <div ref='header' className='nav'>
+            <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
+            <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
+            <img src={logo} alt='logo' className='logo' />
+            <h4 className='navText' >BURGERS</h4>
+            <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
+          </div>
+        </div>
+        <div className='row navMobile d-lg-none'>
+          <div className='col-3 ml-5 mt-4 p-0'>
+            <img src={logo} alt='logo' className='logoMobile' />
+          </div>
+          <div className='col-2 mr-5 mt-4 p-0'>
+            <button
+              onClick={(e) => { e.stopPropagation(); this.setState({ menuIsClicked: !this.state.menuIsClicked }) }}
+              className={this.state.menuIsClicked ? "hamburger hamburger--spin is-active menubtn" : "hamburger hamburger--spin menubtn"}
+              type="button">
+              <span className="hamburger-box">
+                <span className="hamburger-inner" />
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     );
