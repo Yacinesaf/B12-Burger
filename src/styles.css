@@ -168,7 +168,6 @@ video[poster] {
 }
 
 .logo {
-  height: 100px;
   width: 150px;
   margin: 0px 20px;
 }
@@ -243,6 +242,9 @@ video[poster] {
     padding-top: 25vh;
     font-size: 45px;
   }
+  .navText {
+    font-size: 1.3rem;
+  }
 }
 
 /* xl */
@@ -254,19 +256,11 @@ video[poster] {
   }
   .landingPageBackground {
     background-image: url(./assets/BgImage.png);
-    background-position: right bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+
   }
   .orderButton {
-    background-color: #EA2027;
-    color: white;
     padding: 20px 40px;
     font-size: 26px;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
     border-radius: 5px;
   }
 }

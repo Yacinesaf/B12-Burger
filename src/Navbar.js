@@ -48,19 +48,21 @@ class Navbar extends Component {
             <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
           </div>
         </div>
-        <div className='row navMobile d-lg-none'>
-          <div className='col-3 ml-5 mt-4 p-0'>
-            <img src={logo} alt='logo' className='logoMobile' />
-          </div>
-          <div className='col-2 mr-5 mt-4 p-0'>
-            <button
-              onClick={(e) => { e.stopPropagation(); this.setState({ menuIsClicked: !this.state.menuIsClicked }) }}
-              className={this.state.menuIsClicked ? "hamburger hamburger--spin is-active menubtn" : "hamburger hamburger--spin menubtn"}
-              type="button">
-              <span className="hamburger-box">
-                <span className="hamburger-inner" />
-              </span>
-            </button>
+        <div className='container-fluid navMobile d-lg-none' style={{height : 'fit-content'}}>
+          <div className='row m-0 p-4 align-items-center'>
+            <div className='col-2 p-0'>
+              <img src={logo} alt='logo' className='logoMobile' />
+            </div>
+            <div className='col-1 p-0' >
+              <button
+                onClick={(e) => { console.log(5); this.setState({ menuIsClicked: !this.state.menuIsClicked }) }}
+                className={this.state.menuIsClicked ? "hamburger hamburger--spin is-active menubtn" : "hamburger hamburger--spin menubtn"}
+                type="button">
+                <span className="hamburger-box">
+                  <span className="hamburger-inner" />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
