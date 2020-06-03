@@ -69,6 +69,15 @@
 
 .navMobile {
   position: fixed;
+  z-index: 20;
+  transition: 0.5s ease-in-out;
+}
+
+.navMobileScrolled {
+  position: fixed;
+  background-color: #EA2027;
+  z-index: 20;
+  transition: 0.5s ease-in-out;
 }
 
 .menubtn {
