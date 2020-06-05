@@ -214,9 +214,6 @@ video[poster] {
   font-size: 14px;
 }
 
-
-
-
 /*--------contact---------*/
 .contactBg {
   background-image: url(./assets/gradientBg.png);
@@ -225,12 +222,19 @@ video[poster] {
   min-height: 100vh;
 }
 
+.title{
+  font-weight: 600;
+  color: white;
+}
 
+.textarea{
+  height: 500px;
+  width: 500px;
+}
 
 
 
 /* -------Other------- */
-
 .divider {
   border-top: 0.5px solid #1d1b2e;
 }
@@ -242,6 +246,10 @@ video[poster] {
 .logo {
   width: 150px;
   margin: 0px 20px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* --------media queries-------- */

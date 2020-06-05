@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './styles.css'
 import logo from './assets/logo.png'
 import './spinAnimationMenuIcon.css'
+import { Link } from 'react-router-dom';
+
 
 class Navbar extends Component {
   constructor() {
@@ -41,11 +43,19 @@ class Navbar extends Component {
       <div>
         <div className={`d-lg-block d-none ${this.state.scrolled ? 'navScrolledBgColor ' : 'navUnScrolledBgColor '}`}>
           <div ref='header' className='nav'>
-            <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
-            <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
+            <Link to='/'>
+              <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
+            </Link>
+            <Link to={'Aboutus' || 'Apropos'}>
+              <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
+            </Link>
             <img src={logo} alt='logo' className='logo' />
-            <h4 className='navText' >BURGERS</h4>
-            <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
+            <Link to='Burgers'>
+              <h4 className='navText' >BURGERS</h4>
+            </Link>
+            <Link to={'Contactus' || 'Contacter'}>
+              <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
+            </Link>
           </div>
         </div>
         <div className={this.state.scrolled ? 'container-fluid navMobileScrolled d-lg-none' : 'container-fluid navMobile d-lg-none'} style={{ height: 'fit-content' }}>
@@ -67,16 +77,16 @@ class Navbar extends Component {
         </div>
         <div className={`container-fluid ${this.state.menuIsClicked ? 'dropedDown ' : ' dropDown'}`}>
           <div className='row justify-content-center'>
-            <div className='col-12 d-block' style={{textAlign : 'center'}}>
+            <div className='col-12 d-block' style={{ textAlign: 'center' }}>
               <p className='dropDownTexts'>{this.props.isEnglish ? 'Home' : 'Acceuil'}</p>
             </div>
-            <div className='col-12 d-block' style={{textAlign : 'center'}}>
+            <div className='col-12 d-block' style={{ textAlign: 'center' }}>
               <p className='dropDownTexts'>{this.props.isEnglish ? 'About us' : 'A propos'}</p>
             </div>
-            <div className='col-6 d-block' style={{textAlign : 'center'}}>
+            <div className='col-6 d-block' style={{ textAlign: 'center' }}>
               <p className='dropDownTexts'>Burgers</p>
             </div>
-            <div className='col-12 d-block' style={{textAlign : 'center'}}>
+            <div className='col-12 d-block' style={{ textAlign: 'center' }}>
               <p className='dropDownTexts'>{this.props.isEnglish ? 'Contact' : 'Contacter'}</p>
             </div>
           </div>
