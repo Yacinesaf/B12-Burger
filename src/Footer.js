@@ -18,13 +18,13 @@ function Footer({ isEnglish, switchLanguage }) {
           <div className='col-1 d-none d-md-block' />
           <div className='col-12 col-md-9' style={{ display: 'flex' }}>
             <div className='ourLinks'>
-              <p className='footerTitles'>Our Links</p>
-              <p className='footerText'>About us</p>
-              <p className='footerText'>Contact</p>
+              <p className='footerTitles'>{isEnglish ? 'Our Links' : 'Nos Liens'}</p>
+              <p className='footerText'>{isEnglish ? 'About us' : 'A propos'}</p>
+              <p className='footerText'>{isEnglish ? 'Contact' : 'Contacter'}</p>
               <p className='footerText'>Burgers</p>
             </div>
             <div className='ourInfo'>
-              <p className='footerTitles'>Our info</p>
+              <p className='footerTitles'>{isEnglish ? 'Our info' : 'Information'}</p>
               <p className='footerText'>1738 Boulevard Curé-Labelle, Laval, QC H7T 1L2</p>
               <p className='footerText'>(450)-688-0404</p>
               <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -36,12 +36,15 @@ function Footer({ isEnglish, switchLanguage }) {
           </div>
         </div>
       </div>
-      <div className='container-fluid p-3'>
+      <div className='container-fluid p-3 px-5'>
         <div className='divider' />
         <div className='row p-3 align-items-center'>
-          <p style={{ margin: 0, flexGrow: 1 }}>Copyright © 2020 B12 Burger All rights reserved.</p>
-          {isEnglish ? <img onClick={switchLanguage} src={fr} alt='iconA' style={{ height: 15, width: 15, cursor: 'pointer' }} />
-            : <img onClick={switchLanguage} src={en} alt='iconA' style={{ height: 15, width: 15, cursor: 'pointer' }} />}
+          <p style={{ margin: 0, flexGrow: 1 }}>{isEnglish ? 'Copyright © 2020 B12 Burger All rights reserved.' : "Droit d'auteur © 2020 B12 Burger tous droits réservés."}</p>
+          <div style={{display : 'flex', alignItems : 'center'}}>
+            {isEnglish ? <img onClick={switchLanguage} src={fr} alt='iconA' style={{ height: 25, width: 25, cursor: 'pointer' }} />
+              : <img onClick={switchLanguage} src={en} alt='iconA' style={{ height: 25, width: 25, cursor: 'pointer' }} />}
+            {isEnglish ? <p style={{margin : 0, paddingLeft : 5}}>Français</p> : <p style={{margin : 0, paddingLeft : 5}}>English</p>}
+          </div>
         </div>
       </div>
     </div>

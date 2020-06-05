@@ -199,9 +199,7 @@ video[poster] {
   padding-left: 250px;
 }
 
-.ourLinks {
-
-}
+.ourLinks {}
 
 .logoFooter {
   max-width: 150px;
@@ -215,6 +213,21 @@ video[poster] {
 .footerText {
   font-size: 14px;
 }
+
+
+
+
+/*--------contact---------*/
+.contactBg {
+  background-image: url(./assets/gradientBg.png);
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+
+
+
 
 /* -------Other------- */
 
