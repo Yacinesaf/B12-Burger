@@ -49,19 +49,35 @@ class Navbar extends Component {
           </div>
         </div>
         <div className={this.state.scrolled ? 'container-fluid navMobileScrolled d-lg-none' : 'container-fluid navMobile d-lg-none'} style={{ height: 'fit-content' }}>
-          <div className='row m-0 p-4 align-items-center justify-content-between'>
-            <div className='col-2 p-0'>
+          <div className='row m-0 align-items-center justify-content-between'>
+            <div className='col-3 col-md-2 p-0'>
               <img src={logo} alt='logo' className='logoMobile' />
             </div>
             <div className='col-auto p-0' >
               <button
-                onClick={(e) => { console.log(5); this.setState({ menuIsClicked: !this.state.menuIsClicked }) }}
+                onClick={(e) => { this.setState({ menuIsClicked: !this.state.menuIsClicked }) }}
                 className={this.state.menuIsClicked ? "hamburger hamburger--spin is-active menubtn" : "hamburger hamburger--spin menubtn"}
                 type="button">
                 <span className="hamburger-box">
                   <span className="hamburger-inner" />
                 </span>
               </button>
+            </div>
+          </div>
+        </div>
+        <div className={`container-fluid ${this.state.menuIsClicked ? 'dropedDown ' : ' dropDown'}`}>
+          <div className='row justify-content-center'>
+            <div className='col-12 d-block' style={{textAlign : 'center'}}>
+              <p className='dropDownTexts'>{this.props.isEnglish ? 'Home' : 'Acceuil'}</p>
+            </div>
+            <div className='col-12 d-block' style={{textAlign : 'center'}}>
+              <p className='dropDownTexts'>{this.props.isEnglish ? 'About us' : 'A propos'}</p>
+            </div>
+            <div className='col-6 d-block' style={{textAlign : 'center'}}>
+              <p className='dropDownTexts'>Burgers</p>
+            </div>
+            <div className='col-12 d-block' style={{textAlign : 'center'}}>
+              <p className='dropDownTexts'>{this.props.isEnglish ? 'Contact' : 'Contacter'}</p>
             </div>
           </div>
         </div>

@@ -69,15 +69,17 @@
 
 .navMobile {
   position: fixed;
-  z-index: 20;
+  z-index: 25;
   transition: 0.5s ease-in-out;
+  padding: 20px;
 }
 
 .navMobileScrolled {
   position: fixed;
   background-color: #EA2027;
-  z-index: 20;
+  z-index: 25;
   transition: 0.5s ease-in-out;
+  padding: 20px;
 }
 
 .menubtn {
@@ -86,6 +88,29 @@
 
 .logoMobile {
   width: 100%;
+}
+
+.dropDown {
+  overflow: hidden;
+  background-color: #EA2027;
+  transform: translateY(-600px);
+  position: fixed;
+  transition: 0.4s ease-in;
+  z-index: 20;
+}
+
+.dropedDown {
+  padding-top: 117px;
+  transform: translateY(0px);
+  position: fixed;
+  transition: 0.4s ease-out;
+  background-color: #EA2027;
+  z-index: 20;
+}
+
+.dropDownTexts {
+  padding: 15px;
+  font-size: 20px;
 }
 
 /* -------first landing page------- */
@@ -156,6 +181,10 @@ video[poster] {
   width: 100%;
 }
 
+.videoAdjectivesContainer {
+  padding-top: 100px;
+}
+
 /* -------footer------- */
 
 .footer {
@@ -164,6 +193,27 @@ video[poster] {
   min-height: 30vh;
   width: 100%;
   z-index: 1;
+}
+
+.ourInfo {
+  padding-left: 250px;
+}
+
+.ourLinks {
+
+}
+
+.logoFooter {
+  max-width: 150px;
+}
+
+.footerTitles {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.footerText {
+  font-size: 14px;
 }
 
 /* -------Other------- */
@@ -201,6 +251,36 @@ video[poster] {
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
+  }
+  .dropedDown {
+    padding-top: 93px;
+    transform: translateY(0px);
+    position: fixed;
+    transition: 0.4s ease-out;
+    background-color: #EA2027;
+    z-index: 20;
+  }
+  .videoAdjectivesContainer {
+    padding-top: 50px;
+  }
+  .ourInfo {
+    padding-left: 50px;
+  }
+  .logoFooter {
+    max-width: 100px;
+  }
+  .footerTitles {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .footerTitles>p {
+    font-size: 10px;
+  }
+  .footerText {
+    font-size: 12px;
+  }
+  .ourLinks {
+    width: inherit;
   }
 }
 
@@ -265,7 +345,6 @@ video[poster] {
   }
   .landingPageBackground {
     background-image: url(./assets/BgImage.png);
-
   }
   .orderButton {
     padding: 20px 40px;

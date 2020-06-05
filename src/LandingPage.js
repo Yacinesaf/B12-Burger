@@ -32,7 +32,7 @@ function LandingPage({ isEnglish }) {
                 <video controlsList="nodownload" controls src={video} className='videoStyle m-0' poster={thumbnail} />
               </div>
             </div>
-            <div className='row mx-0 justify-content-center' style={{ paddingTop: 100 }}>
+            <div className='row mx-0 justify-content-center videoAdjectivesContainer'>
               <div className='col-10 col-sm-8 col-xl-3 py-3'>
                 <img src={isEnglish ? tasty : tastyfr} alt='tasty' style={{ width: '100%' }} />
               </div>
