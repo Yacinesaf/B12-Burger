@@ -215,6 +215,7 @@ video[poster] {
 }
 
 /*--------contact---------*/
+
 .contactBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
@@ -222,24 +223,24 @@ video[poster] {
   min-height: 100vh;
 }
 
-.title{
+.title {
   font-weight: 600;
   color: white;
 }
 
-.textarea{
+.textarea {
   width: 100%;
-  height: 400px;
+  height: 300px;
   font-size: 20px;
   padding: 15px;
-
 }
+
 .textarea:focus {
   outline: none;
   border-radius: 5px;
 }
 
-.contactbtn{
+.contactbtn {
   float: right;
   margin-top: 20px;
   padding: 15px 25px;
@@ -250,6 +251,7 @@ video[poster] {
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  width: 100%;
 }
 
 .email {
@@ -257,22 +259,29 @@ video[poster] {
   padding: 15px;
   border-radius: 5px;
   font-size: 20px;
+  margin-bottom: 50px;
 }
+
 input:focus {
   outline: none;
 }
 
-label{
-  font-size: 35px;
-  color: white;
-  font-weight: 600;
-  padding: 10px 0px;
+.map-container {
+  height: 450px;
 }
 
+.contactRow {
+  padding-top: 140px;
+}
 
-
+.contactTitle {
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+}
 
 /* -------Other------- */
+
 .divider {
   border-top: 0.5px solid #1d1b2e;
 }
@@ -341,6 +350,20 @@ a:hover {
   .ourLinks {
     width: inherit;
   }
+  .contactRow {
+    padding-top: 120px;
+  }
+  .contactbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .map-container {
+    padding-top: 60px;
+    height: 350px;
+  }
+  .textarea {
+    height : 200px;
+  }
 }
 
 /* sm */
@@ -353,6 +376,7 @@ a:hover {
   .landingPageBackground {
     background-image: url(./assets/BgImageMobile.png);
   }
+  
 }
 
 /* md */
@@ -369,6 +393,31 @@ a:hover {
     padding: 25px 35px;
     font-size: 30px;
     border-radius: 5px;
+  }
+  .contactRow {
+    padding-top: 60px;
+  }
+  .textarea {
+    height: 200px;
+  }
+  .map-container {
+    padding: 60px 0px;
+  }
+  .contactBg {
+    padding: 60px;
+  }
+  .contactbtn {
+    float: right;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #EA2027;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
   }
 }
 
@@ -393,6 +442,17 @@ a:hover {
   .navText {
     font-size: 1.3rem;
   }
+  .map-container {
+    height: 400px;
+    margin-top: 60px;
+    padding: 0;
+  }
+  .contactRow {
+    padding-top: 180px;
+  }
+  .textarea {
+    height: 300px;
+  }
 }
 
 /* xl */
@@ -409,5 +469,9 @@ a:hover {
     padding: 20px 40px;
     font-size: 26px;
     border-radius: 5px;
+  }
+  .map-container {
+    height: 450px;
+    margin-top: 0;
   }
 }
