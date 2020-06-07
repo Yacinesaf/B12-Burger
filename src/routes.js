@@ -17,7 +17,7 @@ function App() {
     <div>
       <Navbar isEnglish={isEnglish} />
       <Route exact path='/' render={(props) => <LandingPage {...props} isEnglish={isEnglish} />} />
-      <Route exact path={isEnglish ? '/Contactus' : 'Contacter'} render={(props) => <Contact {...props} isEnglish={isEnglish} />} />
+      <Route exact path='/contact' render={(props) => <Contact {...props} isEnglish={isEnglish} />} />
       <div className='divider' />
       <Footer switchLanguage={switchLanguage} isEnglish={isEnglish} />
     </div>

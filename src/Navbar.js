@@ -46,14 +46,14 @@ class Navbar extends Component {
             <Link to='/'>
               <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
             </Link>
-            <Link to={this.props.isEnglish ? 'Aboutus' : 'Apropos'}>
+            <Link to='/about'>
               <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
             </Link>
             <img src={logo} alt='logo' className='logo' />
-            <Link to='Burgers'>
+            <Link to='/Burgers'>
               <h4 className='navText' >BURGERS</h4>
             </Link>
-            <Link to={this.props.isEnglish ? 'Contactus' : 'Contacter'}>
+            <Link to='/contact'>
               <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
             </Link>
           </div>
@@ -78,16 +78,24 @@ class Navbar extends Component {
         <div className={`container-fluid ${this.state.menuIsClicked ? 'dropedDown ' : ' dropDown'}`}>
           <div className='row justify-content-center'>
             <div className='col-12 d-block' style={{ textAlign: 'center' }}>
-              <p className='dropDownTexts'>{this.props.isEnglish ? 'Home' : 'Acceuil'}</p>
+              <Link to='/' onClick={() => this.setState({ menuIsClicked: false })}>
+                <p className='dropDownTexts'>{this.props.isEnglish ? 'Home' : 'Acceuil'}</p>
+              </Link>
             </div>
             <div className='col-12 d-block' style={{ textAlign: 'center' }}>
-              <p className='dropDownTexts'>{this.props.isEnglish ? 'About us' : 'A propos'}</p>
+              <Link to='/aboutus' onClick={() => this.setState({ menuIsClicked: false })}>
+                <p className='dropDownTexts'>{this.props.isEnglish ? 'About us' : 'A propos'}</p>
+              </Link>
             </div>
             <div className='col-6 d-block' style={{ textAlign: 'center' }}>
-              <p className='dropDownTexts'>Burgers</p>
+              <Link to='/Burgers' onClick={() => this.setState({ menuIsClicked: false })}>
+                <p className='dropDownTexts'>Burgers</p>
+              </Link>
             </div>
             <div className='col-12 d-block' style={{ textAlign: 'center' }}>
-              <p className='dropDownTexts'>{this.props.isEnglish ? 'Contact' : 'Contacter'}</p>
+              <Link to='/contact' onClick={() => this.setState({ menuIsClicked: false })}>
+                <p className='dropDownTexts'>{this.props.isEnglish ? 'Contact' : 'Contacter'}</p>
+              </Link>
             </div>
           </div>
         </div>
