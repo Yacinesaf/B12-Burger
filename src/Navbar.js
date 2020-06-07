@@ -46,14 +46,14 @@ class Navbar extends Component {
             <Link to='/'>
               <h4 className='navText' >{this.props.isEnglish ? 'HOME' : 'ACCEUIL'}</h4>
             </Link>
-            <Link to={'Aboutus' || 'Apropos'}>
+            <Link to={this.props.isEnglish ? 'Aboutus' : 'Apropos'}>
               <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
             </Link>
             <img src={logo} alt='logo' className='logo' />
             <Link to='Burgers'>
               <h4 className='navText' >BURGERS</h4>
             </Link>
-            <Link to={'Contactus' || 'Contacter'}>
+            <Link to={this.props.isEnglish ? 'Contactus' : 'Contacter'}>
               <h4 className='navText' >{this.props.isEnglish ? 'CONTACT' : 'CONTACTER'}</h4>
             </Link>
           </div>
