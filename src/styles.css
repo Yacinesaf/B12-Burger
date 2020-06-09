@@ -1,5 +1,4 @@
 /* ------nav section------ */
-
 .navText {
   color: white;
   font-weight: 600;
@@ -65,8 +64,10 @@
   transition-duration: 0.8s;
 }
 
-/* -------mobile navabar------- */
 
+
+
+/* -------mobile navabar------- */
 .navMobile {
   position: fixed;
   z-index: 25;
@@ -113,8 +114,10 @@
   font-size: 20px;
 }
 
-/* -------first landing page------- */
 
+
+
+/* -------first landing page------- */
 .landingPageBackground {
   background-image: url(./assets/BgImage.png);
   background-position: right;
@@ -151,8 +154,10 @@ button:focus {
   outline: none;
 }
 
-/* -------second landing page------- */
 
+
+
+/* -------second landing page------- */
 .secondPageBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
@@ -185,8 +190,10 @@ video[poster] {
   padding-top: 100px;
 }
 
-/* -------footer------- */
 
+
+
+/* -------footer------- */
 .footer {
   background-image: url(./assets/gradientBg.png);
   background-size: cover;
@@ -214,8 +221,10 @@ video[poster] {
   font-size: 14px;
 }
 
-/*--------contact---------*/
 
+
+
+/*--------contact---------*/
 .contactBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
@@ -280,8 +289,39 @@ input:focus {
   padding-top: 60px;
 }
 
-/* -------Other------- */
 
+
+/*-------about-------*/
+.aboutBg {
+  background-image: url(./assets/gradientBg.png);
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+.aboutText {
+  color: white;
+  font-size: 24px;
+  font-weight: 550;
+  max-width: 750px;
+}
+.aboutRow {
+  padding-top: 140px;
+}
+.aboutTitle {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.AboutImage {
+  filter: brightness(80%);
+  width: 100%;
+}
+
+
+
+
+/* -------Other------- */
 .divider {
   border-top: 0.5px solid #1d1b2e;
 }
@@ -364,7 +404,21 @@ a:hover {
   .textarea {
     height : 200px;
   }
+  .aboutTitle {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .aboutText {
+    font-size: 18px;
+  }
+  .about {
+    padding-top: 20px;
+  }
+  .aboutRow {
+    padding-top: 120px;
+  }
 }
+
 
 /* sm */
 
@@ -419,6 +473,20 @@ a:hover {
     border-radius: 5px;
     width: 100%;
   }
+  .about {
+    padding-top: 40px;
+    }
+  .aboutRow {
+  padding-top: 140px;
+  }
+  .aboutText {
+    font-size: 24px;
+  }
+  .aboutTitle {
+    color: white;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
 }
 
 /* lg */
@@ -453,6 +521,7 @@ a:hover {
   .textarea {
     height: 300px;
   }
+
 }
 
 /* xl */
@@ -474,4 +543,7 @@ a:hover {
     height: 450px;
     margin-top: 0;
   }
+  .about {
+    padding-top: 0;
+    }
 }

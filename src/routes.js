@@ -7,6 +7,7 @@ import './footer.css'
 import { Route } from 'react-router-dom';
 import { useHistory, useLocation } from 'react-router'
 import Contact from './Contact';
+import About from './About';
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -18,6 +19,7 @@ function App() {
       <Navbar isEnglish={isEnglish} />
       <Route exact path='/' render={(props) => <LandingPage {...props} isEnglish={isEnglish} />} />
       <Route exact path='/contact' render={(props) => <Contact {...props} isEnglish={isEnglish} />} />
+      <Route exact path='/about' render={(props) => <About {...props} isEnglish={isEnglish} />} />
       <div className='divider' />
       <Footer switchLanguage={switchLanguage} isEnglish={isEnglish} />
     </div>
