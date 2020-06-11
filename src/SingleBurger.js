@@ -1,16 +1,15 @@
 import React from 'react';
 
-function SingleBurger({burgerObject, ingredients}) {
+function SingleBurger({ burgerObject, trioClicked }) {
+
+  
   return (
-    <div className='container'>
-      <div className='row'>
-        <p>{burgerObject.name}</p>
-        <ul>
-        {ingredients.map(x=> (
-          <li>{x}</li>
-        ))}
-        </ul>
-      </div>
+    <div className="card menuItem">
+        <div className="card-body">
+          <h5 className="card-title burgerTitle">{burgerObject.name}</h5>
+          <p className="card-text ingredients">{burgerObject.ingredients.join(", ")}</p>
+          <p className='price'>${trioClicked ? burgerObject.priceTrio : burgerObject.priceSingle}</p>
+        </div>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import { Route } from 'react-router-dom';
 import { useHistory, useLocation } from 'react-router'
 import Contact from './Contact';
 import About from './About';
+import Burgers from './Burgers';
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(true);
@@ -20,6 +21,7 @@ function App() {
       <Route exact path='/' render={(props) => <LandingPage {...props} isEnglish={isEnglish} />} />
       <Route exact path='/contact' render={(props) => <Contact {...props} isEnglish={isEnglish} />} />
       <Route exact path='/about' render={(props) => <About {...props} isEnglish={isEnglish} />} />
+      <Route exact path='/burgers' render={(props) => <Burgers {...props} isEnglish={isEnglish} />} />
       <div className='divider' />
       <Footer switchLanguage={switchLanguage} isEnglish={isEnglish} />
     </div>

@@ -319,6 +319,86 @@ input:focus {
 }
 
 
+/*--------burgers---------*/
+.burgersPageBg {
+  background-image: url(./assets/gradientBg.png);
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.menuItem {
+  min-height: 250px;
+  max-height: 250px;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 5px;
+}
+
+.burgersContainer {
+  padding-top: 220px;
+}
+
+.burgerTitle {
+  color: white;
+  font-size: 2.1rem;
+}
+
+.ingredients{
+  font-size: 1.25rem;
+}
+
+.price {
+  color : #EA2027; 
+  font-weight:bold;
+  font-size :24px; 
+  text-align : right; 
+  margin : 0
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burgerButtons {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  min-width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.burgerButtonsClicked {
+  background-color: #EA2027;
+  border: none;
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px;
+  min-width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.burgerButtons:hover {
+  background-color: #EA2027;
+  border: none;
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
 
 
 /* -------Other------- */
