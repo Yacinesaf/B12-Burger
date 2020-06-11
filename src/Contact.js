@@ -28,9 +28,15 @@ function Contact({ isEnglish }) {
               <p style={{ margin: 0, paddingLeft: 15 }}>(450)-688-0404</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', paddingBottom: 15 }}>
-              <img src={instagram} height={24} width={24} alt='insta' />
-              <img src={facebook} height={24} width={24} alt='fb' style={{ margin: '0px 20px' }} />
-              <img src={ubereats} alt='ue' style={{ border: 'white 1px solid', borderRadius: 5, height: 23, width: 23 }} />
+              <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/b12_burger/?utm_source=ig_embed'>
+                <img src={instagram} height={24} width={24} alt='insta' />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/B12.BURGER/'>
+                <img src={facebook} height={24} width={24} alt='fb' style={{ margin: '0px 20px' }} />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href='https://www.ubereats.com/ca/montreal/food-delivery/b12-burger-halal/0AwhUHFcTiiUozsVCXjFXQ'>
+                <img src={ubereats} alt='ue' style={{ border: 'white 1px solid', borderRadius: 5, height: 23, width: 23 }} />
+              </a>
             </div>
           </div>
           <iframe

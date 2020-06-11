@@ -329,7 +329,6 @@ input:focus {
 
 .menuItem {
   min-height: 250px;
-  max-height: 250px;
   background-color: transparent;
   border: 1.5px solid white;
   border-radius: 5px;
@@ -368,7 +367,8 @@ input:focus {
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
-  margin: 10px;
+  margin:0px 20px;
+  margin-bottom: 30px;
   min-width: 120px;
   font-size: 20px;
   font-weight: bold;
@@ -384,9 +384,10 @@ input:focus {
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
-  margin: 20px;
+  margin:0px 20px;
   min-width: 120px;
   font-size: 20px;
+  margin-bottom: 30px;
   font-weight: bold;
   transition: 0.2s ease-in-out;
   margin-bottom: 20px;
@@ -397,6 +398,14 @@ input:focus {
   border: none;
   transform: scale(1.2);
   transition: 0.2s ease-in-out;
+}
+
+.ourburgers {
+  font-size: 60px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 
@@ -497,6 +506,12 @@ a:hover {
   .aboutRow {
     padding-top: 120px;
   }
+  .burgersContainer {
+    padding-top: 140px;
+  }
+  .ourburgers {
+    font-size: 40px;
+  }
 }
 
 
@@ -567,6 +582,9 @@ a:hover {
     font-weight: 600;
     padding-bottom: 30px;
   }
+  .burgersContainer {
+    padding-top: 140px;
+  }
 }
 
 /* lg */
@@ -601,7 +619,16 @@ a:hover {
   .textarea {
     height: 300px;
   }
-
+  .ourburgers {
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .burgersContainer {
+    padding-top: 220px;
+  }
 }
 
 /* xl */
@@ -625,5 +652,12 @@ a:hover {
   }
   .about {
     padding-top: 0;
+    }
+    .ourburgers {
+      font-size: 60px;
+      color: white;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 50px;
     }
 }
