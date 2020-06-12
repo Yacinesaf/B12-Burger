@@ -7,7 +7,7 @@ function About({isEnglish}) {
     <div className='container-fluid p-2 p-md-5 m-0 aboutBg'>
       <div className='row px-4 px-md-5 aboutRow'>
         <div className='col-12 col-xl-7 order-2 order-lg-1 about'>
-          <h2 className='aboutTitle'>About us</h2>
+          <h2 className='aboutTitle'>{isEnglish ? 'About us' : 'A propos'}</h2>
           {isEnglish ? 
             <p className='aboutText'>
             Welcome to B12 burger. We're dedicated to providing you the very best of Burgers, with an emphasis on size and taste.

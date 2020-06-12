@@ -20,7 +20,9 @@ function LandingPage({ isEnglish }) {
                 : 'Goûtez à la grandeur avec nos ingrédients 100% naturels et un bœuf frais 200G assaisonné et grillé.'}
             </p>
             <p className='slogan'>{isEnglish ? 'THINK BIG. EAT BIG.' : 'PENSER GRAND. MANGER GRAND.'}</p>
-            <button className='orderButton'>{isEnglish ? 'ORDER NOW' : 'COMMANDER'}</button>
+            <a target="_blank" rel="noopener noreferrer" href='https://www.ubereats.com/ca/montreal/food-delivery/b12-burger-halal/0AwhUHFcTiiUozsVCXjFXQ'>
+              <button className='orderButton'>{isEnglish ? 'ORDER NOW' : 'COMMANDER'}</button>
+            </a>
           </div>
         </div>
       </div>

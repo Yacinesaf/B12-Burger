@@ -6,6 +6,7 @@ import ubereats from './assets/UE_Logo_Stacked_RGB_White@2x.png'
 import logo from './assets/logo.png'
 import en from './assets/en.png'
 import fr from './assets/fr.png'
+import { Link } from 'react-router-dom';
 
 function Footer({ isEnglish, switchLanguage }) {
   return (
@@ -19,9 +20,15 @@ function Footer({ isEnglish, switchLanguage }) {
           <div className='col-12 col-md-9' style={{ display: 'flex' }}>
             <div className='ourLinks'>
               <p className='footerTitles'>{isEnglish ? 'Our Links' : 'Nos Liens'}</p>
-              <p className='footerText'>{isEnglish ? 'About us' : 'A propos'}</p>
-              <p className='footerText'>{isEnglish ? 'Contact' : 'Contacter'}</p>
-              <p className='footerText'>Burgers</p>
+              <Link to='/about'>
+                <p className='footerText'>{isEnglish ? 'About us' : 'A propos'}</p>
+              </Link>
+              <Link to='contact'>
+                <p className='footerText'>{isEnglish ? 'Contact' : 'Contacter'}</p>
+              </Link>
+              <Link to='/burgers'>
+                <p className='footerText'>Burgers</p>
+              </Link>
             </div>
             <div className='ourInfo'>
               <p className='footerTitles'>{isEnglish ? 'Our info' : 'Information'}</p>
