@@ -6,7 +6,7 @@ function About({isEnglish}) {
   return (
     <div className='container-fluid p-2 p-md-5 m-0 aboutBg'>
       <div className='row px-4 px-md-5 aboutRow'>
-        <div className='col-12 col-xl-7 order-2 order-lg-1 about'>
+        <div className='col-12 col-xl-7 order-2 order-xl-1 about'>
           <h2 className='aboutTitle'>{isEnglish ? 'About us' : 'A propos'}</h2>
           {isEnglish ? 
             <p className='aboutText'>
@@ -40,7 +40,7 @@ function About({isEnglish}) {
            Équipe B12 Burger </p>
           }
         </div>
-        <div className='col-12 col-xl-5 order-1 order-lg-2'>
+        <div className='col-12 col-xl-5 order-1 order-xl-2'>
         <img src={restaurant} alt='img' className='AboutImage' /> 
         </div>
       </div>

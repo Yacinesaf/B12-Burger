@@ -316,6 +316,7 @@ input:focus {
 .AboutImage {
   filter: brightness(80%);
   width: 100%;
+ max-height: 700px;
 }
 
 
@@ -636,6 +637,12 @@ a:hover {
   }
   .burgersContainer {
     padding-top: 220px;
+  }
+  .aboutRow {
+    padding-top: 120px;
+  }
+  .aboutText {
+    padding-bottom: 20px;
   }
 }
 
