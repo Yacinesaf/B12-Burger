@@ -1,9 +1,9 @@
 const burgerListEn = [
    {
-    name : 'Classic',
+    name : 'Classic Burger',
     priceSingle : 6.99,
     priceTrio : 10.99,
-    ingredients : ['Lettuce', 'Tomato', 'Pickle', 'Onion', 'B12 Sauce']
+    ingredients : ['Lettuce', 'Tomato', 'Pickle', 'Onion', ]
   },
    {
     name : 'Steak filet',
@@ -18,64 +18,64 @@ const burgerListEn = [
     ingredients : ['Chicken Filet', 'Sauteed pepper', 'Mushrooms', 'Onion', 'Cheese sauce']
   },
    {
-    name : 'Classic chicken',
+    name : 'Classic chicken Burger',
     priceSingle : 6.99,
     priceTrio : 10.99,
-    ingredients : ['Chicken', 'Lettuce', 'Tomato', 'Pickle', 'B12 Sauce']
+    ingredients : ['Chicken', 'Lettuce', 'Tomato', 'Pickle', ]
   },
    {
-    name : 'B12 chicken',
+    name : 'chicken Burger',
     priceSingle : 9.99,
     priceTrio : 13.99,
-    ingredients : ['Grilled chicken', 'Lettuce', 'Tomato', 'Pickle', 'Onion rings', 'B12 Sauce']
+    ingredients : ['Grilled chicken', 'Lettuce', 'Tomato', 'Pickle', 'Onion rings', ]
   },
    {
-    name : 'Veggie',
+    name : 'Veggie Burger',
     priceSingle : 7.99,
     priceTrio : 11.99,
     ingredients : ['Fried chickpea', 'Lettuce', 'Tomato', 'Pickle', 'Chickpea sauce']
   },
    {
-    name : 'Fried mozzarella',
+    name : 'Fried mozzarella Burger',
     priceSingle : 10.99,
     priceTrio : 14.99,
     ingredients : ['Fried mozzarella', 'Lettuce', 'Tomato', 'Pickle', 'BBQ Sauce']
   },
    {
-    name : 'Hot cheese',
+    name : 'Hot cheese Burger',
     priceSingle : 9.99,
     priceTrio : 13.99,
     ingredients : ['Hot cheese', 'Hot sauce', 'Jalapeno', 'Lettuce', 'Tomato', 'Chips', 'Onion']
   },
    {
-    name : 'Fumed',
+    name : 'Fumed Burger',
     priceSingle : 9.99,
     priceTrio : 13.99,
     ingredients : ['Fumed cheese', 'Fumed meat', 'Lettuce', 'Tomato', 'Pickle', 'Onion', 'Fumed sauce']
   },
    {
-    name : 'Feta',
+    name : 'Feta Burger',
     priceSingle : 8.99,
     priceTrio : 12.99,
     ingredients : ['Feta cheese', 'Rocket', 'Sautéed mushrooms', 'Caramelized onions', 'Pesto sauce']
   },
    {
-    name : 'B12',
+    name : 'Planet',
     priceSingle : 6.99,
     priceTrio : 10.99,
-    ingredients : ['Cheese sauce', 'Beef bacon', 'Tomato', 'Pickle', 'Onion rings', 'B12 Sauce']
+    ingredients : ['Cheese sauce', 'Beef bacon', 'Tomato', 'Pickle', 'Onion rings', ]
   },
    {
-    name : 'Swiss',
+    name : 'Swiss Burger',
     priceSingle : 8.99,
     priceTrio : 12.99,
     ingredients : ['Swiss cheese', 'Caramelized onions', 'Sautéed mushrooms', 'Rocket', 'Pesto sauce']
   },
    {
-    name : 'Chedd egg',
+    name : 'Chedd egg Burger',
     priceSingle : 10.99,
     priceTrio : 14.99,
-    ingredients : ['Cheddar cheese', 'Egg', 'Beef bacon', 'Lettuce', 'Tomato', 'Pickle', 'Onion', 'B12 Sauce']
+    ingredients : ['Cheddar cheese', 'Egg', 'Beef bacon', 'Lettuce', 'Tomato', 'Pickle', 'Onion', ]
   },
 
 ]
@@ -106,7 +106,7 @@ const burgerListFr = [
    ingredients : ['Poulet', 'Laitue', 'Tomate', 'Cornichon', 'Sauce B12']
  },
   {
-   name : 'Poulet B12',
+   name : 'Poulet',
    priceSingle : 9.99,
    priceTrio : 13.99,
    ingredients : ['Poulet grillé', 'Laitue', 'Tomate', 'Cornichon', "Rondelles d'oingons", 'Sauce B12']
@@ -142,7 +142,7 @@ const burgerListFr = [
    ingredients : ['Fromage feta', 'Roquette', 'Champignon sauté', 'Oingons caramelisés', 'Sauce pesto']
  },
   {
-   name : 'B12',
+   name : 'Planet',
    priceSingle : 6.99,
    priceTrio : 10.99,
    ingredients : ['Sauce fromage', 'Bacon au boeuf', 'Tomate', 'Cornichon', "Rondelles d'oingons", 'Sauce B12']

@@ -16,13 +16,13 @@ function LandingPage({ isEnglish }) {
         <div style={{ minHeight: 'inherit' }} className='row mx-0 align-items-xl-center justify-content-center'>
           <div className='col-11 pl-lg-4'>
             <p className='headline'>
-              {isEnglish ? 'Taste the greatness with our 100% natural ingredients and a fresh 200g beef seasoned and grilled.'
+              {isEnglish ? 'Taste greatness with our 100% natural ingredients and a fresh 200g beef seasoned and grilled.'
                 : 'Goûtez à la grandeur avec nos ingrédients 100% naturels et un bœuf frais 200G assaisonné et grillé.'}
             </p>
             {isEnglish ? <p className='slogan'>THINK BIG. EAT BIG.</p> : <p className='slogan'>PENSER GRAND.<br /> MANGER GRAND.</p>}
 
 
-            <a target="_blank" rel="noopener noreferrer" href='https://www.ubereats.com/ca/montreal/food-delivery/b12-burger-halal/0AwhUHFcTiiUozsVCXjFXQ'>
+            <a target="_blank" rel="noopener noreferrer" href='https://www.ubereats.com/ca/montreal/food-delivery'>
               <button className='orderButton'>{isEnglish ? 'ORDER NOW' : 'COMMANDER'}</button>
             </a>
           </div>

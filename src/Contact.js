@@ -21,28 +21,25 @@ function Contact({ isEnglish }) {
           <div className='d-none d-sm-block'>
             <div style={{ display: 'flex', alignItems: 'flex-end', paddingBottom: 15 }}>
               <img src={locationIcon} alt='locationIcon' height={20} width={20} />
-              <p style={{ margin: 0, paddingLeft: 15 }}>1738 Boulevard Curé-Labelle, Laval, QC H7T 1L2</p>
+              <p style={{ margin: 0, paddingLeft: 15 }}>3253  James Street, Burnaby, British Columbia, V5G 4W7</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-end', paddingBottom: 15 }}>
               <img src={phoneIcon} alt='phoneIcon' height={20} width={20} />
-              <p style={{ margin: 0, paddingLeft: 15 }}>(450)-688-0404</p>
+              <p style={{ margin: 0, paddingLeft: 15 }}>(778)-222-2679</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', paddingBottom: 15 }}>
-              <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/b12_burger/?utm_source=ig_embed'>
-                <img src={instagram} height={24} width={24} alt='insta' />
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/B12.BURGER/'>
-                <img src={facebook} height={24} width={24} alt='fb' style={{ margin: '0px 20px' }} />
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href='https://www.ubereats.com/ca/montreal/food-delivery/b12-burger-halal/0AwhUHFcTiiUozsVCXjFXQ'>
+              <img src={instagram} height={24} width={24} alt='insta' />
+              <img src={facebook} height={24} width={24} alt='fb' style={{ margin: '0px 20px' }} />
+              <a target="_blank" rel="noopener noreferrer" href='https://www.ubereats.com/ca/montreal/food-delivery'>
                 <img src={ubereats} alt='ue' style={{ border: 'white 1px solid', borderRadius: 5, height: 23, width: 23 }} />
               </a>
             </div>
           </div>
           <iframe
             title='map'
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11175.688773834885!2d-73.76144363704528!3d45.55189071690263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9aba07159f0c77c0!2sB12%20BURGERS!5e0!3m2!1sfr!2sca!4v1591557802269!5m2!1sfr!2sca"
-            width='100%' height="80%" frameBorder="0" style={{ border: 0 }} allowFullScreen="" ariaHidden="false" tabIndex="0" />
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.1343454182393!2d-123.02173778413606!3d49.25489948065951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3311ab1d2946d99!2sJames%20Street%20Caf%C3%A9%20%26%20Grill!5e0!3m2!1sen!2sca!4v1597864300781!5m2!1sen!2sca"
+            width='100%' height="80%" frameBorder="0" style={{ border: 0 }} allowFullScreen="" ariaHidden="false" tabIndex="0"
+          />
         </div>
       </div>
     </div>

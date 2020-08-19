@@ -1,10 +1,28 @@
 /* ------nav section------ */
+
 .navText {
   color: white;
   font-weight: 600;
   position: relative;
   cursor: pointer;
   margin: 0px 40px;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  color: #EA2027;
+  font-weight: 600;
+  margin: 0px 20px;
+  letter-spacing: 3px;
+  transition: 0.2s;
+}
+.logoBlack {
+  font-family: 'Anton', sans-serif;
+  color: black;
+  font-weight: 600;
+  margin: 0px 20px;
+  letter-spacing: 3px;
+  transition: 0.2s;
 }
 
 .navText:after {
@@ -41,7 +59,7 @@
   right: 0;
   background-color: #EA2027;
   z-index: 20;
-  height: 100px;
+  height: 70px;
   display: flex;
   align-items: center;
   transition-duration: 0.8s;
@@ -51,6 +69,7 @@
   transform: scale(0.8);
   padding: 0px;
 }
+
 
 .navUnScrolledBgColor {
   position: fixed;
@@ -64,10 +83,8 @@
   transition-duration: 0.8s;
 }
 
-
-
-
 /* -------mobile navabar------- */
+
 .navMobile {
   position: fixed;
   z-index: 25;
@@ -114,10 +131,8 @@
   font-size: 20px;
 }
 
-
-
-
 /* -------first landing page------- */
+
 .landingPageBackground {
   background-image: url(./assets/BgImage.png);
   background-position: right;
@@ -154,10 +169,8 @@ button:focus {
   outline: none;
 }
 
-
-
-
 /* -------second landing page------- */
+
 .secondPageBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
@@ -190,10 +203,8 @@ video[poster] {
   padding-top: 100px;
 }
 
-
-
-
 /* -------footer------- */
+
 .footer {
   background-image: url(./assets/gradientBg.png);
   background-size: cover;
@@ -221,10 +232,8 @@ video[poster] {
   font-size: 14px;
 }
 
-
-
-
 /*--------contact---------*/
+
 .contactBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
@@ -289,24 +298,26 @@ input:focus {
   padding-top: 60px;
 }
 
-
-
 /*-------about-------*/
+
 .aboutBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
   background-size: contain;
   min-height: 100vh;
 }
+
 .aboutText {
   color: white;
   font-size: 24px;
   font-weight: 550;
   max-width: 750px;
 }
+
 .aboutRow {
   padding-top: 140px;
 }
+
 .aboutTitle {
   color: white;
   font-weight: 600;
@@ -316,11 +327,11 @@ input:focus {
 .AboutImage {
   filter: brightness(80%);
   width: 100%;
- max-height: 700px;
+  max-height: 700px;
 }
 
-
 /*--------burgers---------*/
+
 .burgersPageBg {
   background-image: url(./assets/gradientBg.png);
   background-position: center;
@@ -344,16 +355,16 @@ input:focus {
   font-size: 2.1rem;
 }
 
-.ingredients{
+.ingredients {
   font-size: 1.25rem;
 }
 
 .price {
-  color : #EA2027; 
-  font-weight:bold;
-  font-size :24px; 
-  text-align : right; 
-  margin : 0
+  color: #EA2027;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
+  margin: 0
 }
 
 .card-body {
@@ -368,7 +379,7 @@ input:focus {
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
-  margin:0px 20px;
+  margin: 0px 20px;
   margin-bottom: 30px;
   min-width: 120px;
   font-size: 20px;
@@ -383,7 +394,7 @@ input:focus {
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
-  margin:0px 20px;
+  margin: 0px 20px;
   margin-bottom: 30px;
   min-width: 120px;
   font-size: 20px;
@@ -406,9 +417,8 @@ input:focus {
   margin-bottom: 50px;
 }
 
-
-
 /* -------Other------- */
+
 .divider {
   border-top: 0.5px solid #1d1b2e;
 }
@@ -417,10 +427,7 @@ input:focus {
   height: 300px;
 }
 
-.logo {
-  width: 150px;
-  margin: 0px 20px;
-}
+
 
 a:hover {
   text-decoration: none;
@@ -440,6 +447,12 @@ a:hover {
   }
   .slogan {
     font-size: 30px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .logoBlack {
+    font-size: 20px;
   }
   .orderButton {
     padding: 15px 25px;
@@ -489,7 +502,7 @@ a:hover {
     height: 350px;
   }
   .textarea {
-    height : 200px;
+    height: 200px;
   }
   .aboutTitle {
     font-size: 24px;
@@ -513,16 +526,14 @@ a:hover {
   .burgerButtons {
     min-width: 100px;
     font-size: 16px;
-      margin:0px 10px;
+    margin: 0px 10px;
   }
-  
   .burgerButtonsClicked {
     min-width: 100px;
     font-size: 16px;
-      margin:0px 10px;
+    margin: 0px 10px;
   }
 }
-
 
 /* sm */
 
@@ -534,7 +545,12 @@ a:hover {
   .landingPageBackground {
     background-image: url(./assets/BgImageMobile.png);
   }
-  
+  .logo{
+    font-size: 26px;
+  }
+  .logoBlack{
+    font-size: 26px;
+  }
 }
 
 /* md */
@@ -579,9 +595,9 @@ a:hover {
   }
   .about {
     padding-top: 40px;
-    }
+  }
   .aboutRow {
-  padding-top: 140px;
+    padding-top: 140px;
   }
   .aboutText {
     font-size: 24px;
@@ -644,6 +660,12 @@ a:hover {
   .aboutText {
     padding-bottom: 20px;
   }
+  .logo{
+    font-size: 30px;
+  }
+  .logoBlack{
+    font-size: 30px;
+  }
 }
 
 /* xl */
@@ -667,12 +689,12 @@ a:hover {
   }
   .about {
     padding-top: 0;
-    }
-    .ourburgers {
-      font-size: 60px;
-      color: white;
-      font-weight: 800;
-      text-align: center;
-      margin-bottom: 50px;
-    }
+  }
+  .ourburgers {
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }

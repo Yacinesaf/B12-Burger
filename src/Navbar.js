@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './styles.css'
-import logo from './assets/logo.png'
 import './spinAnimationMenuIcon.css'
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 
 class Navbar extends Component {
@@ -49,7 +49,7 @@ class Navbar extends Component {
             <Link to='/about'>
               <h4 className='navText' >{this.props.isEnglish ? 'ABOUT US' : 'A PROPOS'}</h4>
             </Link>
-            <img src={logo} alt='logo' className='logo' />
+            <Logo scrolled={this.state.scrolled} />
             <Link to='/Burgers'>
               <h4 className='navText' >BURGERS</h4>
             </Link>
@@ -61,7 +61,7 @@ class Navbar extends Component {
         <div className={this.state.scrolled ? 'container-fluid navMobileScrolled d-lg-none' : 'container-fluid navMobile d-lg-none'} style={{ height: 'fit-content' }}>
           <div className='row m-0 align-items-center justify-content-between'>
             <div className='col-3 col-md-2 p-0'>
-              <img src={logo} alt='logo' className='logoMobile' />
+              <Logo />
             </div>
             <div className='col-auto p-0' >
               <button
