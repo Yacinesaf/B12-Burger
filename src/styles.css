@@ -16,9 +16,10 @@
   letter-spacing: 3px;
   transition: 0.2s;
 }
-.logoBlack {
+
+.logoWhite {
   font-family: 'Anton', sans-serif;
-  color: black;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
   margin: 0px 20px;
   letter-spacing: 3px;
@@ -69,7 +70,6 @@
   transform: scale(0.8);
   padding: 0px;
 }
-
 
 .navUnScrolledBgColor {
   position: fixed;
@@ -427,8 +427,6 @@ input:focus {
   height: 300px;
 }
 
-
-
 a:hover {
   text-decoration: none;
 }
@@ -451,7 +449,7 @@ a:hover {
   .logo {
     font-size: 20px;
   }
-  .logoBlack {
+  .logoWhite {
     font-size: 20px;
   }
   .orderButton {
@@ -545,10 +543,10 @@ a:hover {
   .landingPageBackground {
     background-image: url(./assets/BgImageMobile.png);
   }
-  .logo{
+  .logo {
     font-size: 26px;
   }
-  .logoBlack{
+  .logoWhite {
     font-size: 26px;
   }
 }
@@ -660,10 +658,10 @@ a:hover {
   .aboutText {
     padding-bottom: 20px;
   }
-  .logo{
+  .logo {
     font-size: 30px;
   }
-  .logoBlack{
+  .logoWhite {
     font-size: 30px;
   }
 }

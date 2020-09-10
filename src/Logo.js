@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Logo({ scrolled }) {
+function Logo({ scrolled, menuIsClicked }) {
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1 className={scrolled ? 'logoBlack' : 'logo'}>PLANET</h1>
-      <h1 className={scrolled ? 'logoBlack' : 'logo'}>BURGER</h1>
+      <h1 className={scrolled || menuIsClicked ? 'logoWhite' : 'logo'}>PLANET</h1>
+      <h1 className={scrolled || menuIsClicked ? 'logoWhite' : 'logo'}>BURGER</h1>
     </div>
   );
 }

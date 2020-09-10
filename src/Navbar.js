@@ -61,7 +61,7 @@ class Navbar extends Component {
         <div className={this.state.scrolled ? 'container-fluid navMobileScrolled d-lg-none' : 'container-fluid navMobile d-lg-none'} style={{ height: 'fit-content' }}>
           <div className='row m-0 align-items-center justify-content-between'>
             <div className='col-3 col-md-2 p-0'>
-              <Logo />
+              <Logo scrolled={this.state.scrolled} menuIsClicked={this.state.menuIsClicked} />
             </div>
             <div className='col-auto p-0' >
               <button
